@@ -1,6 +1,6 @@
 
 When to go for static or dynamic variables?
-
+-------------------------------------------
 
 From the point of view of a software maintainer, use static (stack)variables every time you know in advance how much 
 storage is needed, and use dynamic storage (malloc, new) only when the amount needed is not known until runtime.
@@ -8,3 +8,16 @@ storage is needed, and use dynamic storage (malloc, new) only when the amount ne
 Dynamic allocation is slower though because it is allocated at runtime. In addition, say you have several class objects
 of the same type and you want to maintain one of the attributes per class, rather than per instance. Than you would 
 want to make it static.
+
+
+if string is not empty
+------------------
+if (str[0] != '\0')
+{
+    // your code here
+}
+
+or 
+! strcmp(url, "")
+
+
