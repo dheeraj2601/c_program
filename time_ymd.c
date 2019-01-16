@@ -18,3 +18,5 @@ int main()
 
     return 0;
 }
+
+// You can convert between time_t and struct tm with mktime and localtime.
