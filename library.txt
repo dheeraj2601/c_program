@@ -1,0 +1,2 @@
+http://tldp.org/HOWTO/Program-Library-HOWTO/more-examples.html
+static, shared, and dynamically loaded libraries
