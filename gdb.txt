@@ -9,3 +9,8 @@ Continuing.
 
 
 debuginfo-install glibc-2.17-222.el7.x86_64
+
+
+
+https://blogs.oracle.com/linux/8-gdb-tricks-you-should-know-v2
+
