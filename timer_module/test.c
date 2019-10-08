@@ -27,7 +27,7 @@ void main()
 
     timer1 = start_timer(200, time_handler1, TIMER_SINGLE_SHOT, NULL);
     timer2 = start_timer(100, time_handler2, TIMER_PERIODIC, NULL);
-    timer3 = start_timer(50, time_handler3, TIMER_PERIODIC, NULL);nclud
+    timer3 = start_timer(50, time_handler3, TIMER_PERIODIC, NULL);
 
     sleep(1);
 
