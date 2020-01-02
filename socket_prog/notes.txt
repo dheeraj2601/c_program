@@ -1,0 +1,31 @@
+Socket creation:
+
+int sockfd = socket(domain, type, protocol)
+sockfd: socket descriptor, an integer (like a file-handle)
+domain: communication domain e.g., AF_INET , AF_INET6 
+type: communication type SOCK_STREAM, SOCK_DGRAM
+protocol: Protocol value for Internet Protocol(IP), which is 0.
+
+int setsockopt(int sockfd, int level, int optname, const void *optval, socklen_t optlen);
+This helps in manipulating options for the socket referred by the file descriptor sockfd. This is completely optional, but it helps in reuse of address and port.
+
+int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+binds the socket to the address and port number specified in addr(custom data structure).
+
+
+int listen(int sockfd, int backlog);
+It puts the server socket in a passive mode, where it waits for the client to approach the server to make a connection. 
+backlog: defines the maximum length to which the queue of pending connections for sockfd may grow
+
+int new_socket= accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+It extracts the first connection request on the queue of pending connections for the listening socket, sockfd, creates a new connected socket, and returns a new file descriptor referring to that socket. At this point, connection is established between client and server, and they are ready to transfer data.
+
+
+
+int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+The connect() system call connects the socket referred to by the file descriptor sockfd to the address specified by addr. Server’s address and port is specified in addr.
+
+
+
+
+
