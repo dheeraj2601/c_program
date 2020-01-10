@@ -1,5 +1,0 @@
-Q. Check if two BSTs contain same set of elements
-Ans.  traverse first tree and store its element in a list or array. Now, traverse 2nd tree and simultaneously check if the current element is present in the list or no.
-
-
-
